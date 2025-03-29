@@ -36,7 +36,7 @@ def about():
 
 @app.route('/license')
 def license():
-    return redirect("https://example.com", code=302)
+    return redirect("https://github.com/fand1l/PanelControl?tab=GPL-3.0-1-ov-file", code=302)
 
 @app.route('/login', methods=["post", "get"])
 def login():
