@@ -1,0 +1,120 @@
+.container {
+    width: 1200px;
+    height: 800px;
+    margin: 0 auto;
+    margin-top: 300px;
+    position: relative;
+    background-color: rgba(175, 185, 222, 0);
+}
+
+.archlinux {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    margin-top: 40px;
+    border: 2px solid rgb(179, 216, 245);
+    border-radius: 50px;
+    background: linear-gradient(135deg, #1793D1 0%, #1C71B3 50%, #0F5E9C 100%);
+    background-size: 150% 150%;
+    transition: background-position 0.3s ease-in-out;
+}
+
+.archlinux:hover {
+    background-position: 100% 100%;
+}
+
+.archlinux img {
+    height: 150px;
+    float: left;
+    margin-right: 30px;
+    border: 2px solid rgb(179, 216, 245);
+    border-radius: 30px;
+    padding: 40px;
+    background-color: #095087;
+}
+
+.archlinux p {
+    float: right;
+    color: white;
+    font-size: 20px;
+    font-family: "Ubuntu", sans-serif;
+}
+
+
+.debian {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    margin-top: 40px;
+    border: 2px solid #c50027;
+    border-radius: 50px;
+    background: linear-gradient(135deg, #b9062a 0%, #b80031 50%, #840016 100%);
+    background-size: 150% 150%;
+    transition: background-position 0.3s ease-in-out;
+}
+
+.debian:hover {
+    background-position: 100% 100%;
+}
+
+.debian img {
+    height: 150px;
+    float: left;
+    margin-right: 30px;
+    border: 2px solid #c50027;
+    border-radius: 30px;
+    padding: 40px;
+    background-color: #4b0011;
+}
+
+.debian p {
+    float: right;
+    color: white;
+    font-size: 20px;
+    font-family: "Ubuntu", sans-serif;
+}
+
+
+.fedora {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    margin-top: 40px;
+    border: 2px solid #294172;
+    border-radius: 50px;
+    background: linear-gradient(135deg, #1e355c 0%, #27437b 50%, #2d568f 100%);
+    background-size: 150% 150%;
+    transition: background-position 0.3s ease-in-out;
+}
+
+.fedora:hover {
+    background-position: 100% 100%;
+}
+
+.fedora img {
+    height: 150px;
+    float: left;
+    margin-right: 30px;
+    border: 2px solid #294172;
+    border-radius: 30px;
+    padding: 40px;
+    background-color: #0a3266;
+}
+
+.fedora p {
+    float: right;
+    color: white;
+    font-size: 20px;
+    font-family: "Ubuntu", sans-serif;
+}
+
+a {
+    text-decoration: none;
+    size: 0;
+    font-size: 0;
+    margin: 0;
+    padding: 0;
+}

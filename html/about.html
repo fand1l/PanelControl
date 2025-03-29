@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Про нас</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/index.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/nav_panel.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/basic.css') }}">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="{{ url_for('index') }}">
+                <img src="{{ url_for('static', filename='assets/newlogo.svg') }}">
+            </a>
+        </div>
+        <div class="navigation">
+            <nav>
+                <a href="{{ url_for('index') }}">Головна</a>
+                <a href="{{ url_for('about') }}">Про нас</a>
+                <a href="{{ url_for('contact') }}">Контакти</a>
+                <a href="{{ url_for('license') }}">Ліцензія</a>
+                <a class="login" href="{{ url_for('login') }}">Увійти</a>
+            </nav>
+        </div>
+    </header>
+    <div class="content">
+        
+    </div>
+</body>
+</html>

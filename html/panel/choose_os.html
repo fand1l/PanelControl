@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Обрати операційну систему</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/choose_os.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/nav_panel.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/basic.css') }}">
+</head>
+<body>
+    <div class="content">
+        <div class="oses">
+            <a href="{{ url_for('panel_archlinux') }}">
+                <div class="archlinux">
+                    <img src="{{ url_for('static', filename='assets/archlinux_logo.png') }}">
+                    <p><b>Arch Linux</b> — це мінімалістична, високопродуктивна операційна система, яка ідеально підходить для серверного використання. Завдяки максимальному контролю над конфігурацією, Arch є чудовим вибором для адміністраторів та DevOps-інженерів, які хочуть отримати чисту та оптимізовану систему без зайвих компонентів.</p>
+                </div>
+            </a>
+            <a href="{{ url_for('panel_debian') }}">
+                <div class="debian">
+                    <img src="{{ url_for('static', filename='assets/debian_logo.png') }}">
+                    <p><b>Debian</b> — це одна з найстаріших і найстабільніших операційних систем, яка ідеально підходить для серверного використання. Завдяки своїй стабільності, безпеці та широкій підтримці, Debian є популярним вибором серед адміністраторів та компаній, що шукають надійне серверне рішення.</p>
+                </div>
+            </a>
+            <a href="{{ url_for('panel_fedora') }}">
+                <div class="fedora">
+                    <img src="{{ url_for('static', filename='assets/fedora_logo.png') }}">
+                    <p><b>Fedora Server</b> — це передове серверне рішення, що поєднує новітні технології, високу продуктивність і покращену безпеку. Завдяки швидким оновленням та інноваціям, Fedora Server є чудовим вибором для розробників, адміністраторів та підприємств, які хочуть використовувати найактуальніше ПЗ у своїх серверних середовищах.</p>
+                </div>
+            </a>
+        </div>
+    </div>
+</body>
+</html>

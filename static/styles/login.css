@@ -1,0 +1,104 @@
+.container {
+    width: 500px;
+    height: 320px;
+    margin: 0 auto;
+    margin-top: 300px;
+    position: relative;
+    background-color: rgba(175, 185, 222, 0.6);
+    border-radius: 40px;
+    padding: 10px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.container .input_box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+.container .input_box input {
+    position: relative;
+    padding: 13px 60px 13px 20px;
+    background: #eee;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color: #333;
+    font-weight: 500;
+    left: 10px;
+}
+
+.container .input_box i{
+    left: -30px;
+    position: relative;
+    font-size: 20px;
+}
+
+.container .incorrect_pass_text p {
+    color: #c95f5f;
+    font-size: 20px;
+}
+
+.container h3 {
+    font-size: 40px;
+    font-family: "Ubuntu", sans-serif;
+    text-align: center;
+    margin-bottom: 45px;
+    font-weight: 700;
+}
+
+.container .forgot_pass a {
+    text-decoration: none;
+    color: rgb(61, 216, 216);
+    text-align: center;
+}
+
+.container .forgot_pass {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .btn {
+    position: relative;
+    font-family: "Ubuntu", sans-serif;
+    background: #7494ec;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 600;
+    border-radius: 8px 8px 30px 8px;
+    left: 255px;
+    width: 49%;
+    height: 50px;
+    top: 50px;
+}
+
+.container .btn:hover {
+    background: #5f7bc9;
+}
+
+.container .btn_left {
+    position: relative;
+    font-family: "Ubuntu", sans-serif;
+    background: #dc8284;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 600;
+    border-radius: 8px 8px 8px 30px;
+    width: 49%;
+    height: 50px;
+    top: 0px;
+}
+
+.container .btn_left:hover {
+    background: #c95f5f;
+}

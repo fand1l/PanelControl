@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакти</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/index.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/nav_panel.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/basic.css') }}">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="{{ url_for('index') }}">
+                <img src="{{ url_for('static', filename='assets/newlogo.svg') }}">
+            </a>
+        </div>
+        <div class="navigation">
+            <nav>
+                <a href="{{ url_for('index') }}">Головна</a>
+                <a href="{{ url_for('contact') }}">Контакти</a>
+                <a href="{{ url_for('license') }}">Ліцензія</a>
+                <a class="login" href="{{ url_for('login') }}">Увійти</a>
+            </nav>
+        </div>
+    </header>
+    <div class="content">
+        <div class="contacts">
+            <div class="os_name">
+                <h2>Назва організації</h2>
+                <div class="info_item">
+                    <i class='bx bx-buildings' ></i>
+                    <p>Cesccall</p>
+                </div>
+            </div>
+            <div class="disk">
+                <h2>Електрона адреса</h2>
+                <div class="info_item">
+                    <i class='bx bx-envelope'></i>
+                    <p>cescall@email.org</p>
+                </div>
+            </div>
+            <div class="memory">
+                <h2>Номер телефону</h2>
+                <div class="info_item">
+                    <i class='bx bx-phone' ></i>
+                    <p>+380 383 904 98 23</p>
+                </div>
+            </div>
+            <div class="local_ip">
+                <h2>Сайт</h2>
+                <div class="info_item">
+                    <i class='bx bx-desktop'></i>
+                    <p>none.com</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

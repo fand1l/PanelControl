@@ -1,0 +1,48 @@
+header .logo img {
+    height: 85px;
+}
+
+header .logo:hover {
+    filter: brightness(80%);
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.368);
+    width: 100%;
+    height: 90px;
+    color: white;
+    padding-left: 350px;
+    padding-right: 350px;
+    box-sizing: border-box;
+    display: flex;
+}
+
+header nav a {
+    list-style-type: None;
+    color: rgb(178, 178, 178);
+    padding: 15px;
+    font-size: 20px;
+}
+
+header nav {
+    position: absolute;
+    right: 0;
+    padding-right: 350px;
+    top: 30px;
+}
+
+header nav .login {
+    margin-left: 25px;
+}
+
+header nav a:hover {
+    color: white;
+}
+
+header a {
+    font-style: None;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: None;
+}

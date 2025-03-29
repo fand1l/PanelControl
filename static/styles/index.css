@@ -1,0 +1,222 @@
+.content a {
+    text-decoration: none;
+}
+
+.content a:hover {
+    text-decoration: underline;
+}
+
+.content h1 {
+    color: white;
+    font-size: 70px;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 600;
+    padding-top: 100px;
+}
+
+.content h2 {
+    color: white;
+    font-size: 45px;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: bold;
+    padding-top: 70px;
+}
+
+.content h2 .easy {
+    color: rgb(185, 245, 179);
+}
+
+.content h2 .fast {
+    color: rgb(179, 216, 245);
+}
+
+.content h2 .effective {
+    color: rgb(243, 179, 245);
+}
+
+.content h2 .os {
+    color: rgb(245, 179, 179);
+}
+
+.content h3 {
+    color: white;
+    font-size: 50px;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: bold;
+    padding-top: 55px;
+}
+
+.content .easy-con p {
+    color: white;
+    font-size: 20px;
+    font-family: "Ubuntu", sans-serif;
+    padding-top: 30px;
+}
+
+.content .fast-con p {
+    color: white;
+    font-size: 20px;
+    font-family: "Ubuntu", sans-serif;
+    padding-top: 30px;
+}
+
+.content .effective-con p {
+    color: white;
+    font-size: 20px;
+    font-family: "Ubuntu", sans-serif;
+    padding-top: 30px;
+}
+
+.content .supos .archlinux {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    margin-top: 40px;
+    border: 2px solid rgb(179, 216, 245);
+    border-radius: 50px;
+    background: linear-gradient(135deg, #1793D1 0%, #1C71B3 50%, #0F5E9C 100%);
+    background-size: 150% 150%;
+    transition: background-position 0.3s ease-in-out;
+}
+
+.content .supos .archlinux:hover {
+    background-position: 100% 100%;
+}
+
+.content .supos .archlinux img {
+    height: 150px;
+    float: left;
+    margin-right: 30px;
+    border: 2px solid rgb(179, 216, 245);
+    border-radius: 30px;
+    padding: 40px;
+    background-color: #095087;
+}
+
+.content .supos .archlinux p {
+    float: right;
+    color: white;
+    font-size: 20px;
+    font-family: "Ubuntu", sans-serif;
+}
+
+
+.content .supos .debian {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    margin-top: 40px;
+    border: 2px solid #c50027;
+    border-radius: 50px;
+    background: linear-gradient(135deg, #b9062a 0%, #b80031 50%, #840016 100%);
+    background-size: 150% 150%;
+    transition: background-position 0.3s ease-in-out;
+}
+
+.content .supos .debian:hover {
+    background-position: 100% 100%;
+}
+
+.content .supos .debian img {
+    height: 150px;
+    float: left;
+    margin-right: 30px;
+    border: 2px solid #c50027;
+    border-radius: 30px;
+    padding: 40px;
+    background-color: #4b0011;
+}
+
+.content .supos .debian p {
+    float: right;
+    color: white;
+    font-size: 20px;
+    font-family: "Ubuntu", sans-serif;
+}
+
+
+.content .supos .fedora {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    margin-top: 40px;
+    border: 2px solid #294172;
+    border-radius: 50px;
+    background: linear-gradient(135deg, #1e355c 0%, #27437b 50%, #2d568f 100%);
+    background-size: 150% 150%;
+    transition: background-position 0.3s ease-in-out;
+}
+
+.content .supos .fedora:hover {
+    background-position: 100% 100%;
+}
+
+.content .supos .fedora img {
+    height: 150px;
+    float: left;
+    margin-right: 30px;
+    border: 2px solid #294172;
+    border-radius: 30px;
+    padding: 40px;
+    background-color: #0a3266;
+}
+
+.content .supos .fedora p {
+    float: right;
+    color: white;
+    font-size: 20px;
+    font-family: "Ubuntu", sans-serif;
+}
+
+.contacts {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-top: 10px;
+    color: white;
+}
+
+.contacts > div {
+    background-color: rgba(61, 61, 61, 0.5);
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 20px;
+}
+
+.info_item {
+    display: flex;
+    align-items: center;
+}
+
+.info_item i {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.info_item p {
+    margin: 0;
+}
+
+.contacts h2 {
+    margin-bottom: 10px;
+    padding-top: 10px;
+}
+
+.info_item i {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.info_item p {
+    margin-top: 10px;
+}
+
+.screen img {
+    height: 640px;
+    border-radius: 10px;
+    border: 2px solid rgb(179, 216, 245);
+    margin-top: 20px;
+}

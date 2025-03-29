@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Головна сторінка</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/index.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/nav_panel.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/basic.css') }}">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="{{ url_for('index') }}">
+                <img src="{{ url_for('static', filename='assets/newlogo.svg') }}">
+            </a>
+        </div>
+        <div class="navigation">
+            <nav>
+                <a href="{{ url_for('index') }}">Головна</a>
+                <a href="{{ url_for('contact') }}">Контакти</a>
+                <a href="{{ url_for('license') }}">Ліцензія</a>
+                <a class="login" href="{{ url_for('login') }}">Увійти</a>
+            </nav>
+        </div>
+    </header>
+    <div class="content">
+        <div class="description">
+            <h1>Зручна панель керування для вашого віртуального сервера</h1>
+            <h2>Максимальний контроль над вашим сервером — <a class="fast" href="#fast">швидко</a>, <a class="effective" href="#effective">ефективно</a> та з підтримкою декількох <a class="os" href="#supos">ОС</a></h2>
+        </div>
+        <div class="fast-con" id="fast">
+            <h3>Швидко</h3>
+            <p>Оптимізована система забезпечує миттєвий доступ до ресурсів сервера. Завдяки правильному налаштуванні системи ви отримуєте швидке завантаження та оперативне виконання команд</p>
+        </div>
+        <div class="effective-con" id="effective">
+            <h3>Ефективно</h3>
+            <p>Максимальна продуктивність при мінімальних витратах ресурсів. Інструменти моніторингу та підтримка різних операційних системи допомагають досягти стабільної роботи сервера без зайвих зусиль</p>
+        </div>
+        <div class="screen">
+            <img src="{{ url_for('static', filename='assets/screenshot.png') }}">
+        </div>
+        <div class="supos" id="supos">
+            <h3>Підтримувані операційні системи</h3>
+            <div class="archlinux">
+                <img src="{{ url_for('static', filename='assets/archlinux_logo.png') }}">
+                <p><b>Arch Linux</b> — це мінімалістична, високопродуктивна операційна система, яка ідеально підходить для серверного використання. Завдяки максимальному контролю над конфігурацією, Arch є чудовим вибором для адміністраторів та DevOps-інженерів, які хочуть отримати чисту та оптимізовану систему без зайвих компонентів.</p>
+            </div>
+            <div class="debian">
+                <img src="{{ url_for('static', filename='assets/debian_logo.png') }}">
+                <p><b>Debian</b> — це одна з найстаріших і найстабільніших операційних систем, яка ідеально підходить для серверного використання. Завдяки своїй стабільності, безпеці та широкій підтримці, Debian є популярним вибором серед адміністраторів та компаній, що шукають надійне серверне рішення.</p>
+            </div>
+            <div class="fedora">
+                <img src="{{ url_for('static', filename='assets/fedora_logo.png') }}">
+                <p><b>Fedora Server</b> — це передове серверне рішення, що поєднує новітні технології, високу продуктивність і покращену безпеку. Завдяки швидким оновленням та інноваціям, Fedora Server є чудовим вибором для розробників, адміністраторів та підприємств, які хочуть використовувати найактуальніше ПЗ у своїх серверних середовищах.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

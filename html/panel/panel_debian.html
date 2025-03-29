@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Панель Debian 12</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/panel.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/basic.css') }}">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/xterm/4.19.0/xterm.min.css">
+
+    <script>
+        function updateStats() {
+            fetch("/stats/debian12")
+                .then(response => response.json())
+                .then(data => {
+                    document.getElementById("cpu").innerText = data.cpu + " %";
+                    document.getElementById("memory").innerText = data.memory + " MB";
+                })
+                .catch(error => console.error("Помилка:", error));
+        }
+        setInterval(updateStats, 2000);
+        window.onload = updateStats;
+    </script>
+</head>
+<body>
+    <div class="content">
+        <div class="buttons_control">
+            <div class="logo">
+                <a href="{{ url_for('index') }}">
+                    <img src="{{ url_for('static', filename='assets/newlogo.svg') }}">
+                </a>
+            </div>
+            <div class="labels">
+                <p>Керування живленням</p>
+            </div>
+            <div class="buttons">
+                <form action="/power_on" method="POST">
+                    <input type="hidden" name="vm_name" value="debian12">
+                    <button type="submit" class="on">Увімкнути</button>
+                </form>
+                
+                <form action="/power_off" method="POST">
+                    <input type="hidden" name="vm_name" value="debian12">
+                    <button type="submit" class="off">Вимкнути</button>
+                </form>
+                
+                <form action="/reboot" method="POST">
+                    <input type="hidden" name="vm_name" value="debian12">
+                    <button type="submit" class="reboot">Перезавантажити</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="console">
+            <div class="terminal">
+                <iframe src="http://192.168.122.166:12345/terminal" width="99.8%" height="460px"></iframe>
+            </div>
+        </div>
+
+        <div class="monitor">
+            <div class="memoryy">
+                <h2>Використання ОЗП</h2>
+                <div class="info_item">
+                    <i class='bx bx-ruler'></i>
+                    <p id="memory"></p>
+                </div>
+            </div>
+            <div class="cpu">
+                <h2>Використання процесора</h2>
+                <div class="info_item">
+                    <i class='bx bxs-chip'></i>
+                    <p id="cpu"></p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="system_info">
+            <div class="os_name">
+                <h2>Операційна система</h2>
+                <div class="info_item">
+                    <i class='bx bx-terminal'></i>
+                    <p>Debian 12</p>
+                </div>
+            </div>
+            <div class="disk">
+                <h2>Диск</h2>
+                <div class="info_item">
+                    <i class='bx bx-save'></i>
+                    <p>20 ГБ</p>
+                </div>
+            </div>
+            <div class="memory">
+                <h2>ОЗП</h2>
+                <div class="info_item">
+                    <i class='bx bx-ruler'></i>
+                    <p>8192 МБ</p>
+                </div>
+            </div>
+            <div class="local_ip">
+                <h2>Локальна IP адреса</h2>
+                <div class="info_item">
+                    <i class='bx bx-server'></i>
+                    <p>192.168.122.166</p>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>

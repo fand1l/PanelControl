@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Логін</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/login.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/basic.css') }}">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="content">
+        <div class="container">
+            <h3>Вхід у систему</h3>
+            <form method="post" action="/login">
+                <div class="input_box">
+                    <input type="text" name="username" placeholder="Логін" required>
+                    <i class='bx bxs-user'></i>
+                </div>
+                <div class="input_box">
+                    <input type="password" name="password" placeholder="Пароль" required>
+                    <i class='bx bxs-lock-alt'></i>
+                </div>
+                <div class="incorrect_pass">
+                    <p>{{ incorrect_pass_text }}</p>
+                </div>
+                <div class="forgot_pass">
+                    <a href="#">Забули пароль?</a>
+                </div>
+                <button type="submit" class="btn">Увійти</button>
+            </form>
+            <a href="{{ url_for('index') }}"><button class="btn_left">На головну</button></a>
+        </div>
+    </div>
+</body>
+</html>
